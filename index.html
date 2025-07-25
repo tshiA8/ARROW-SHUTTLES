@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arrow Shuttles</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <img src="logo.png" alt="Arrow logo">
+        <span>arrow</span>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="contact-header">
+        <span>057 989 7029</span>
+        <a href="mailto:akonahotshiangwana@gmail.com">akonahotshiangwana@gmail.com</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="car-hero.jpg" alt="Shuttle at OR Tambo" class="hero-img">
+    <div class="hero-text">
+      <h1>Reliable Shuttle Services</h1>
+      <a href="#fare" class="hero-button">BOOK NOW</a>
+    </div>
+    <a class="whatsapp-float" href="https://wa.me/27679987029" target="_blank">💬</a>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>OUR SERVICES</h2>
+    <div class="service-items">
+      <div>
+        <img src="icons/airport.png" alt="Airport" />
+        <p>Airport Transfer</p>
+      </div>
+      <div>
+        <img src="icons/tour.png" alt="City Tours" />
+        <p>City Tours</p>
+      </div>
+      <div>
+        <img src="icons/corporate.png" alt="Corporate Shuttle" />
+        <p>Corporate Shuttle</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fare Calculator -->
+  <section class="fare-section" id="fare">
+    <h2>CALCULATE YOUR FARE</h2>
+    <form id="fareForm">
+      <div class="grid">
+        <input type="text" name="pickup" placeholder="Pickup Location" required />
+        <input type="text" name="dropoff" placeholder="Drop-off Location" required />
+        <input type="date" name="date" required />
+        <select name="passengers" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3+">3+</option>
+        </select>
+        <input type="number" name="distance" placeholder="Distance (km)" step="0.1" min="0.1" required />
+        <button type="submit">BOOK VIA WHATSAPP</button>
+      </div>
+    </form>
+    <div id="fareResult" class="fare-result"></div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-footer" id="contact">
+    <p>📞 057 998 7029</p>
+    <p>📧 akonahotshiangwana@gmail.com</p>
+  </section>
+</body>
+</html>
+<!-- Fare Calculator -->
+<section class="fare-section" id="fare">
+  <h2>CALCULATE YOUR FARE</h2>
+  <form id="fareForm">
+    <div class="grid">
+      <input type="text" name="pickup" placeholder="Pickup Location" required />
+      <input type="text" name="dropoff" placeholder="Drop-off Location" required />
+      <input type="date" name="date" required />
+      <select name="rideType" required>
+        <option value="economy">Economy (R8/km)</option>
+        <option value="comfort">Comfort (R14/km)</option>
+        <option value="luxury">Luxury (R22/km)</option>
+      </select>
+      <select name="passengers" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3+">3+</option>
+      </select>
+      <input type="number" name="distance" placeholder="Distance (km)" step="0.1" min="0.1" required />
+      <button type="submit">BOOK VIA WHATSAPP</button>
+    </div>
+  </form>
+  <div id="fareResult" class="fare-result"></div>
+</section>
