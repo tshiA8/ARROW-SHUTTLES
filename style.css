@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.header {
+  background: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #28a745;
+  font-size: 1.2rem;
+}
+.logo img {
+  height: 30px;
+}
+nav a {
+  margin: 0 1rem;
+  font-weight: 600;
+  color: #003366;
+}
+.contact-header {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero-text {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+.hero-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #28a745;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.whatsapp-float {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 10px 14px;
+  text-align: center;
+}
+
+/* Services */
+.services {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.services h2 {
+  color: #003366;
+}
+.service-items {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.service-items div {
+  text-align: center;
+}
+.service-items img {
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+/* Fare Form */
+.fare-section {
+  background: #f7f7f7;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.fare-section h2 {
+  color: #003366;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+.grid input,
+.grid select,
+.grid button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.grid button {
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.fare-result {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #003366;
+}
+
+/* Map + Contact */
+.map-contact {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.map-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.contact-footer p {
+  margin: 0.3rem 0;
+}
